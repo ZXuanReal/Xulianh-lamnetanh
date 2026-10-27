@@ -1,0 +1,15 @@
+{
+  "default_output_dir": "D:\\Xử lí ảnh\\outputs",
+  "default_mode": "auto",
+  "compute_device": "auto",
+  "default_export_format": "PNG",
+  "jpeg_quality": 92,
+  "webp_quality": 92,
+  "preserve_metadata": true,
+  "enable_notifications": true,
+  "language": "vi",
+  "tile_size": 256,
+  "tile_pad": 16,
+  "max_batch_workers": 1,
+  "models_dir": "D:\\Xử lí ảnh\\models"
+}

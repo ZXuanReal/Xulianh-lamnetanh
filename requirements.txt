@@ -1,0 +1,14 @@
+# Core GUI & Image Processing Dependencies (Tested on Python 3.10 - 3.12, Windows 10/11)
+PySide6>=6.7.0
+opencv-python>=4.9.0
+Pillow>=10.3.0
+numpy>=1.26.0
+psutil>=5.9.0
+
+# AI & Deep Learning Engine (CPU by default; install CUDA index for NVIDIA GPU acceleration)
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Testing & Windows Packaging
+pytest>=8.0.0
+pyinstaller>=6.6.0
