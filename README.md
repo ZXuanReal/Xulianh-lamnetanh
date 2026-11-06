@@ -169,3 +169,51 @@ Sau khi chạy xong, bản phân phối nằm tại `dist\ImageEnhancementStudio
    - *Khắc phục*: Chọn mô hình nhẹ `realesr-general-x4v3`, chọn tỷ lệ `2x`, hoặc giảm `Kích thước Tile` xuống `192 px` trong trang **Cài đặt**.
 3. **Lỗi thiếu bộ nhớ (Out of Memory)**:
    - *Khắc phục*: Vào mục **Cài đặt**, giảm `Kích thước Tile` xuống `192 px` và nhấn **"🧹 Giải phóng bộ nhớ đệm AI (RAM/VRAM)"**.
+
+---
+
+
+
+## 8. Định Hướng Phát Triển
+
+
+
+Dự án tiếp tục được hoàn thiện nhằm nâng cao trải nghiệm người dùng và chất lượng xử lý ảnh.
+
+
+
+- Cải thiện giao diện và tối ưu quy trình thao tác trên ứng dụng.
+
+- Mở rộng kiểm thử với nhiều định dạng và kích thước ảnh.
+
+- Tối ưu hiệu năng xử lý ảnh trên CPU/GPU.
+
+- Tiếp tục bảo trì mã nguồn và hoàn thiện tài liệu hướng dẫn.
+
+
+
+---
+
+---
+
+
+
+## 8. Định Hướng Phát Triển
+
+
+
+Dự án tiếp tục được hoàn thiện nhằm nâng cao trải nghiệm người dùng và chất lượng xử lý ảnh.
+
+
+
+- Cải thiện giao diện và tối ưu quy trình thao tác trên ứng dụng.
+
+- Mở rộng kiểm thử với nhiều định dạng và kích thước ảnh.
+
+- Tối ưu hiệu năng xử lý ảnh trên CPU/GPU.
+
+- Tiếp tục bảo trì mã nguồn và hoàn thiện tài liệu hướng dẫn.
+
+
+
+---
