@@ -263,8 +263,3 @@ Về mặt mã nguồn, cần tiếp tục thực hiện bảo trì, tái cấu 
 
 Song song đó, tài liệu hướng dẫn cài đặt, cấu hình môi trường, sử dụng chức năng và mô tả kiến trúc hệ thống cần được cập nhật đầy đủ. Điều này giúp người dùng mới có thể tiếp cận ứng dụng thuận tiện hơn, đồng thời hỗ trợ những người phát triển trong việc tiếp tục nâng cấp và bảo trì dự án.
 
-### 8.7. Kết luận định hướng phát triển
-
-Nhìn chung, các định hướng trên tập trung vào ba mục tiêu chính: nâng cao chất lượng xử lý ảnh, tối ưu hiệu năng hệ thống và mở rộng khả năng ứng dụng trong thực tế. Việc triển khai các cải tiến cần được thực hiện theo từng giai đoạn, ưu tiên những chức năng mang lại hiệu quả rõ rệt và phù hợp với nguồn lực phát triển.
-
-Thông qua quá trình tiếp tục nghiên cứu, kiểm thử và hoàn thiện, dự án kỳ vọng có thể phát triển từ một ứng dụng xử lý ảnh đáp ứng các yêu cầu cơ bản thành một hệ thống có tính ổn định cao, dễ sử dụng, có khả năng mở rộng và đáp ứng tốt hơn nhu cầu xử lý hình ảnh trong nhiều tình huống thực tế.
