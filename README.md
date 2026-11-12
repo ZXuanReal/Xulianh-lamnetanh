@@ -198,22 +198,73 @@ Dự án tiếp tục được hoàn thiện nhằm nâng cao trải nghiệm ng
 
 
 
-## 8. Định Hướng Phát Triển
 
+## 8. ĐỊNH HƯỚNG PHÁT TRIỂN
 
+Trong tương lai, dự án sẽ tiếp tục được nghiên cứu, hoàn thiện và mở rộng nhằm nâng cao chất lượng xử lý ảnh, tối ưu hiệu năng hoạt động cũng như cải thiện trải nghiệm người dùng. Mặc dù hệ thống hiện tại đã xây dựng được những chức năng xử lý ảnh cơ bản và đáp ứng các yêu cầu chính của đề tài, vẫn còn nhiều tiềm năng để phát triển thêm về mặt kỹ thuật, khả năng tương thích và tính ứng dụng thực tế. Các định hướng phát triển được đề xuất như sau:
 
-Dự án tiếp tục được hoàn thiện nhằm nâng cao trải nghiệm người dùng và chất lượng xử lý ảnh.
+### 8.1. Cải thiện giao diện và nâng cao trải nghiệm người dùng
 
+Tiếp tục hoàn thiện giao diện ứng dụng theo hướng hiện đại, trực quan và thân thiện hơn với người sử dụng. Bố cục các chức năng cần được sắp xếp khoa học, giúp người dùng dễ dàng lựa chọn thao tác và theo dõi quá trình xử lý ảnh mà không cần có kiến thức chuyên sâu về kỹ thuật.
 
+Bên cạnh đó, có thể bổ sung các tính năng hỗ trợ như:
+- Xây dựng khu vực xem trước hình ảnh trước và sau khi xử lý để người dùng dễ dàng so sánh chất lượng.
+- Bổ sung thanh tiến trình (Progress Bar) nhằm hiển thị trạng thái và thời gian xử lý ảnh.
+- Cho phép người dùng tùy chỉnh các thông số xử lý như mức độ làm nét, độ sáng, độ tương phản và cường độ khử nhiễu.
+- Bổ sung chức năng xem lại lịch sử xử lý và quản lý các hình ảnh đã xuất.
+- Tối ưu quy trình tải ảnh, lựa chọn chức năng, xử lý và tải kết quả nhằm giảm số lượng thao tác không cần thiết.
 
-- Cải thiện giao diện và tối ưu quy trình thao tác trên ứng dụng.
+### 8.2. Mở rộng khả năng hỗ trợ định dạng và kích thước ảnh
 
-- Mở rộng kiểm thử với nhiều định dạng và kích thước ảnh.
+Một trong những hướng phát triển quan trọng là mở rộng khả năng tương thích với nhiều loại dữ liệu hình ảnh khác nhau. Hệ thống cần được kiểm thử trên nhiều định dạng phổ biến như JPG, JPEG, PNG, BMP, TIFF và WebP để đảm bảo khả năng đọc, xử lý và xuất ảnh ổn định.
 
-- Tối ưu hiệu năng xử lý ảnh trên CPU/GPU.
+Ngoài ra, cần mở rộng phạm vi kiểm thử với các hình ảnh có độ phân giải và kích thước khác nhau, từ ảnh có dung lượng nhỏ đến ảnh chất lượng cao, ảnh chụp từ điện thoại và ảnh được lưu trữ từ các thiết bị chuyên dụng.
 
-- Tiếp tục bảo trì mã nguồn và hoàn thiện tài liệu hướng dẫn.
+Đặc biệt, cần nghiên cứu phương pháp xử lý các hình ảnh có kích thước lớn nhằm hạn chế tình trạng tiêu tốn quá nhiều bộ nhớ RAM hoặc gây gián đoạn trong quá trình thực thi. Có thể áp dụng kỹ thuật chia ảnh thành các vùng nhỏ (Image Tiling) để xử lý từng phần, sau đó ghép lại thành hình ảnh hoàn chỉnh mà vẫn đảm bảo chất lượng đầu ra.
 
+### 8.3. Tối ưu hiệu năng xử lý ảnh trên CPU và GPU
 
+Hiệu năng xử lý là yếu tố quan trọng ảnh hưởng trực tiếp đến khả năng ứng dụng thực tế của hệ thống. Vì vậy, dự án cần tiếp tục nghiên cứu và tối ưu các thuật toán nhằm giảm thời gian thực thi, hạn chế tài nguyên tiêu thụ và nâng cao tốc độ phản hồi.
 
----
+Đối với CPU, có thể cải thiện hiệu năng thông qua việc tối ưu mã nguồn, giảm các thao tác tính toán dư thừa, tận dụng xử lý đa luồng (Multi-threading) và tối ưu quy trình quản lý bộ nhớ.
+
+Đối với GPU, có thể nghiên cứu tích hợp các công nghệ tăng tốc như CUDA hoặc những thư viện hỗ trợ tính toán song song, giúp tăng tốc các tác vụ xử lý ảnh có khối lượng tính toán lớn. Việc lựa chọn CPU hay GPU cần được thực hiện linh hoạt dựa trên cấu hình phần cứng và quy mô hình ảnh đầu vào.
+
+Ngoài ra, cần tiến hành đo lường và so sánh thời gian xử lý trên các môi trường phần cứng khác nhau để đánh giá chính xác hiệu quả của những phương pháp tối ưu.
+
+### 8.4. Nâng cao chất lượng và độ chính xác xử lý ảnh
+
+Dự án có thể tiếp tục phát triển các phương pháp xử lý ảnh chuyên sâu nhằm cải thiện chất lượng hình ảnh đầu ra, đặc biệt đối với những hình ảnh bị mờ, nhiễu, thiếu sáng hoặc có độ phân giải thấp.
+
+Một số hướng nghiên cứu có thể triển khai:
+- Nghiên cứu và tích hợp các thuật toán khử nhiễu nâng cao để giảm hiện tượng nhiễu hạt nhưng vẫn giữ được chi tiết hình ảnh.
+- Cải thiện khả năng làm sắc nét đường biên và các chi tiết nhỏ, hạn chế hiện tượng ảnh bị gắt hoặc xuất hiện nhiễu giả.
+- Nghiên cứu các phương pháp tăng độ phân giải ảnh (Image Super-Resolution) bằng mô hình học sâu.
+- Kết hợp các kỹ thuật cân bằng sáng, điều chỉnh màu sắc và tăng cường độ tương phản để cải thiện chất lượng hình ảnh trong nhiều điều kiện khác nhau.
+- Đánh giá chất lượng ảnh đầu ra bằng các chỉ số khách quan như PSNR, SSIM và so sánh trực quan giữa ảnh gốc với ảnh sau xử lý.
+
+Định hướng này giúp hệ thống không chỉ thực hiện được các thao tác xử lý ảnh cơ bản mà còn có khả năng giải quyết những trường hợp hình ảnh phức tạp hơn.
+
+### 8.5. Mở rộng chức năng và khả năng tích hợp hệ thống
+
+Trong các phiên bản tiếp theo, có thể xem xét phát triển thêm những chức năng hỗ trợ người dùng trong quá trình xử lý và quản lý hình ảnh, chẳng hạn như xử lý hàng loạt nhiều ảnh cùng lúc (Batch Processing), tự động nhận diện đặc điểm hình ảnh để đề xuất thông số xử lý phù hợp và cho phép lưu lại các cấu hình xử lý thường xuyên sử dụng.
+
+Bên cạnh đó, hệ thống có thể được nghiên cứu để tích hợp với các nền tảng lưu trữ trực tuyến hoặc xây dựng giao diện lập trình ứng dụng (API), tạo điều kiện cho các ứng dụng khác có thể sử dụng chức năng xử lý ảnh mà không cần triển khai lại toàn bộ thuật toán.
+
+Về lâu dài, có thể phát triển ứng dụng theo mô hình Client – Server hoặc triển khai trên nền tảng Web, giúp người dùng truy cập và sử dụng các chức năng xử lý ảnh từ nhiều thiết bị khác nhau mà không cần cài đặt phần mềm trực tiếp trên máy tính.
+
+### 8.6. Tăng cường kiểm thử, bảo trì và hoàn thiện tài liệu
+
+Để đảm bảo tính ổn định và khả năng phát triển lâu dài, dự án cần được kiểm thử thường xuyên trên nhiều môi trường hệ điều hành, cấu hình phần cứng và điều kiện sử dụng khác nhau.
+
+Cần xây dựng thêm các bộ kiểm thử (Test Cases) cho từng chức năng, bao gồm trường hợp đầu vào hợp lệ, dữ liệu không hợp lệ, hình ảnh bị lỗi, định dạng không được hỗ trợ và các tình huống phát sinh trong quá trình xử lý. Đồng thời, cần kiểm tra khả năng phục hồi khi xảy ra lỗi để hạn chế tình trạng ứng dụng bị dừng đột ngột hoặc mất dữ liệu.
+
+Về mặt mã nguồn, cần tiếp tục thực hiện bảo trì, tái cấu trúc những đoạn code chưa tối ưu, chuẩn hóa cách đặt tên biến, hàm và tổ chức các module theo hướng dễ quản lý, dễ mở rộng. Việc quản lý phiên bản bằng Git cũng cần được duy trì nhằm theo dõi lịch sử thay đổi và hỗ trợ quá trình phối hợp phát triển.
+
+Song song đó, tài liệu hướng dẫn cài đặt, cấu hình môi trường, sử dụng chức năng và mô tả kiến trúc hệ thống cần được cập nhật đầy đủ. Điều này giúp người dùng mới có thể tiếp cận ứng dụng thuận tiện hơn, đồng thời hỗ trợ những người phát triển trong việc tiếp tục nâng cấp và bảo trì dự án.
+
+### 8.7. Kết luận định hướng phát triển
+
+Nhìn chung, các định hướng trên tập trung vào ba mục tiêu chính: nâng cao chất lượng xử lý ảnh, tối ưu hiệu năng hệ thống và mở rộng khả năng ứng dụng trong thực tế. Việc triển khai các cải tiến cần được thực hiện theo từng giai đoạn, ưu tiên những chức năng mang lại hiệu quả rõ rệt và phù hợp với nguồn lực phát triển.
+
+Thông qua quá trình tiếp tục nghiên cứu, kiểm thử và hoàn thiện, dự án kỳ vọng có thể phát triển từ một ứng dụng xử lý ảnh đáp ứng các yêu cầu cơ bản thành một hệ thống có tính ổn định cao, dễ sử dụng, có khả năng mở rộng và đáp ứng tốt hơn nhu cầu xử lý hình ảnh trong nhiều tình huống thực tế.
